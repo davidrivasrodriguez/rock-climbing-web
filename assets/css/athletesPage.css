@@ -1,0 +1,777 @@
+.header-container {
+    width: 100%;
+    height: 62vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    aspect-ratio: 16/9;
+    background-image: url('../images/athletesPage/header.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 100%;
+
+    padding: 0 12.76% 0 12.76%;
+}
+
+.header-main {
+    width: 100%;
+
+    padding: 0 12.76% 0 12.76%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+/* --------------------- NAV --------------------- */
+header {
+    width: 100%;
+    height: 8.75rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo {
+    height: 50px;
+    flex: 0 0 100px;
+
+
+    background-image: url('../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: var(--button-color);
+    margin: 4px 0;
+}
+
+nav {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    text-transform: uppercase;
+
+}
+
+nav ul li {
+    padding: .9rem;
+}
+
+nav ul li a {
+    font-family: KamerikBold-8;
+
+    font-size: clamp(0.85rem, 0.833rem + 0.056vw, 0.9rem);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+    color: rgb(192, 192, 192);
+}
+
+
+.explore-button {
+    font-family: Montserrat;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+    font-size: clamp(0.85rem, 0.833rem + 0.056vw, 0.9rem);
+    background-color: var(--button-color);
+    border: var(--button-border);
+    padding: 1.1rem 2rem;
+}
+
+.explore-button:hover {
+    background-color: var(--button-color-hover);
+    border: var(--button-border-hover);
+}
+
+/* --------------------- HEADER --------------------- */
+
+.header-body {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 4rem 0 0 0;
+
+    position: relative;
+    z-index: 99;
+}
+
+.header-title {
+    color: white;
+    font-size: clamp(2.5rem, 1.667rem + 2.778vw, 5rem);
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.header-subtitle {
+    color: white;
+    font-size: clamp(1.4rem, 1.033rem + 1.222vw, 2.5rem);
+    letter-spacing: 0.1em;
+}
+
+
+/* --------------------- ATHLETES --------------------- */
+.athletes-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem 12.76% 4rem 12.76%;
+}
+
+.athletes-box {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+}
+
+.athlete-card {
+    flex: 1 1 calc(50% - 2rem);
+    min-width: 300px;
+    background: white;
+    border-radius: .2rem;
+    box-shadow: var(--main-box-shadow);
+}
+
+.athlete-image-container {
+    position: relative;
+    height: 20rem;
+}
+
+.athlete-1 .athlete-image {
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../images/athletesPage/sarahchen.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+}
+
+.athlete-2 .athlete-image {
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../images/athletesPage/marcusrivera.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+}
+
+.athlete-3 .athlete-image {
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../images/athletesPage/emmathopmson.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 10%;
+
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+}
+
+.athlete-4 .athlete-image {
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../images/athletesPage/kainakamura.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 70%;
+
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+}
+
+.athlete-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.athlete-header {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: white;
+}
+
+.athlete-name {
+    color: white;
+    font-size: clamp(0.9rem, 0.7rem + 0.667vw, 1.5rem);
+    font-weight: bold;
+    margin: 0;
+}
+
+.athlete-nickname {
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+    margin: 0.25rem 0;
+}
+
+.athlete-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.athlete-nationality {
+    background: var(--primary-color);
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+    font-size: clamp(0.7rem, 0.642rem + 0.194vw, 0.875rem);
+}
+
+.athlete-age {
+    font-size: clamp(0.7rem, 0.642rem + 0.194vw, 0.875rem);
+}
+
+.athlete-content {
+    padding: 1.5rem;
+}
+
+.athlete-bio {
+    color: black;
+    margin-bottom: 1.5rem;
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+}
+
+/* Sections */
+.athlete-section {
+    margin-bottom: 1.5rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.section-icon {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+    width: 24px;
+    height: 24px;
+}
+
+.section-title-1,
+.section-title-2,
+.section-title-3 {
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+    font-weight: 600;
+}
+
+.section-title-1::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%232c3e50' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpath d='M6 9H4.5a2.5 2.5 0 0 1 0-5H6'/%3E%3Cpath d='M18 9h1.5a2.5 2.5 0 0 0 0-5H18'/%3E%3Cpath d='M4 22h16'/%3E%3Cpath d='M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22'/%3E%3Cpath d='M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22'/%3E%3Cpath d='M18 2H6v7a6 6 0 0 0 12 0V2Z'/%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.section-title-2::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%232c3e50' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Ccircle cx='12' cy='12' r='6'/%3E%3Ccircle cx='12' cy='12' r='2'/%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.section-title-3::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%232c3e50' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Ccircle cx='12' cy='8' r='6'/%3E%3Cpath d='M15.477 12.89 17 22l-5-3-5 3 1.523-9.11'/%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+/* Achievements */
+.achievements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-item span {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.achievement-item span::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23eab308' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpolygon points='12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2'%3E%3C/polygon%3E%3C/svg%3E");
+
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* Specialties */
+.specialties-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.specialty-tag {
+    background: #f7f7f7;
+    color: black;
+    border: 1px solid #80808012;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: clamp(0.7rem, 0.642rem + 0.194vw, 0.875rem);
+}
+
+/* Stats */
+.stats-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.stat-item {
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: 150px;
+    background: #f9fafb;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.stat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.stat-name {
+    text-transform: capitalize;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.stat-value {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    font-weight: bold;
+}
+
+.stat-bar-bg {
+    width: 100%;
+    height: 0.5rem;
+    background: #e5e7eb;
+    border-radius: 1rem;
+}
+
+.stat-bar-fill {
+    height: 100%;
+    background: #4CAF50;
+    border-radius: .2rem;
+    transition: width 0.3s ease;
+}
+
+/* Social Links */
+
+.social-links ul {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: .5rem;
+
+    cursor: pointer;
+}
+
+.social-links ul li {
+    list-style-type: none;
+}
+
+.social-links ul li a {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.social-links ul li a img {
+    flex: 1 0 30px;
+    height: 30px;
+    min-width: 30px;
+}
+
+
+/* --------------------- FOOTER --------------------- */
+
+
+footer {
+    width: 100%;
+    background-color: var(--primary-color);
+
+    margin-top: 2rem;
+    padding: 2rem 12.76% 2rem 12.76%;
+    color: white;
+}
+
+.newsletter-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10rem 0 10rem;
+}
+
+.newsletter-text {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.newsletter-box {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.newsletter-box input {
+    flex: 6;
+
+    border: var(--button-border);
+    padding: .6rem;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.newsletter-box input:focus {
+    outline: none;
+}
+
+.newsletter-box .cta-button {
+    background: white;
+    color: black;
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+
+    cursor: pointer;
+}
+
+.newsletter-box .cta-button:hover {
+    background-color: var(--button-color-hover);
+    border: 1px solid white;
+    color: white;
+}
+
+.footer-main {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0 2rem 0;
+}
+
+.footer-nav {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.footer-nav-top {
+    flex: 1;
+    padding: 2rem 0 0 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav-logo {
+    height: 50px;
+    flex: 0 0 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../images/logo-wh.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-nav-top ul {
+    flex: 7;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.footer-nav-top ul li {
+    list-style-type: none;
+}
+
+.footer-nav-top ul li a {
+    font-weight: bold;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-top ul li a:hover {
+    color: #b3b3b3;
+}
+
+.footer-nav-center {
+    flex: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+
+
+    padding-top: 2rem;
+}
+
+.footer-nav-center ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.footer-nav-center ul li {
+    list-style-type: none;
+}
+
+.footer-nav-center ul li a {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-center ul li a:hover {
+    color: #b3b3b3;
+}
+
+.footer-nav-bottom {
+    flex: 1;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.footer-nav-bottom ul {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: .5rem;
+
+    cursor: pointer;
+}
+
+.footer-nav-bottom ul li {
+    list-style-type: none;
+}
+
+.footer-nav-bottom ul li a {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-bottom ul li a img {
+    flex: 1 0 30px;
+    height: 30px;
+    min-width: 30px;
+}
+
+.footer-nav-bottom p {
+    flex: 8;
+
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ------------------- MEDIA QUERIES ------------------- */
+
+@media screen and (max-width: 938px) {
+    /* body {
+        background-color: rgb(13, 88, 208);
+    } */
+
+    .newsletter-container {
+        padding: 0 5% 0 5%;
+    }
+
+    .form-row {
+        flex-flow: column nowrap;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1006px) {
+    /* body {
+        background-color: rgb(208, 13, 13);
+    } */
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #nav-menu.active {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 6rem;
+    }
+
+    .menu-icon.translate {
+        position: relative;
+        right: -114px;
+    }
+
+    nav ul {
+        position: relative;
+        right: 40px;
+    }
+
+    nav ul li {
+        padding: .2rem;
+    }
+
+    .explore-button {
+        display: none;
+    }
+
+    .athletes-container {
+        padding: 4rem 5% 4rem 5%;
+    }
+
+}
+
+
+@media screen and (max-width: 740px) {
+    /* body {
+        background-color: rgb(143, 13, 208);
+    } */
+
+    .newsletter-container {
+        padding: 0;
+        align-items: center;
+    }
+
+    .newsletter-box {
+        margin-top: 1rem;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 0;
+    }
+
+    .newsletter-box input {
+        min-width: 350px;
+    }
+
+    .footer-main {
+        padding: 0;
+    }
+
+    .footer-nav-top {
+        padding: 0;
+        flex-flow: column nowrap;
+    }
+
+    .footer-nav-logo {
+        width: 100px;
+        flex: 0 0 100px;
+    }
+
+    .footer-nav-center {
+        flex-direction: row;
+    }
+
+    .footer-nav-bottom {
+        padding: 1rem 0 1rem 0;
+        flex-direction: column;
+    }
+
+    .footer-nav-bottom p {
+        padding: 1rem 0 0 0;
+    }
+
+    .footer-nav-bottom ul {
+        justify-content: center;
+    }
+}

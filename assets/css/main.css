@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: KamerikBold-8;
+    src: url("../fonts/Kamerik-205-bold-8.ttf"),
+        url("../fonts/Kamerik-205-bold-8.woff"),
+        url("../fonts/Kamerik-205-bold-8.woff2");
+}
+
+@font-face {
+    font-family: KamerikBook-9;
+    src: url("../fonts/Kamerik-205-book-9.ttf"),
+        url("../fonts/Kamerik-205-book-9.woff"),
+        url("../fonts/Kamerik-205-book-9.woff2");
+}
+
+@font-face {
+    font-family: KamerikHeavy-3;
+    src: url("../fonts/Kamerik-205-heavy-3.ttf"),
+        url("../fonts/Kamerik-205-heavy-3.woff"),
+        url("../fonts/Kamerik-205-heavy-3.woff2");
+}
+
+@font-face {
+    font-family: KamerikThin-6;
+    src: url("../fonts/Kamerik-205-thin-6.ttf"),
+        url("../fonts/Kamerik-205-thin-6.woff"),
+        url("../fonts/Kamerik-205-thin-6.woff2");
+}
+
+:root {
+    --button-color: #2c3e50;
+    --button-color-hover: #1a252f;
+    --button-border: 1px solid #1a252f;
+    --button-border-hover: 1px solid #2c3e50;
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --background-color: #f7f7f7;
+    --main-box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: KamerikBold-8;
+    color: black;
+}
+
+/* .cta-button {
+    font-family: Montserrat;
+    font-weight: 200;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+    background-color: var(--button-color);
+    border: var(--button-border);
+    padding: 1.1rem 2rem;
+} */
+
+.cta-button {
+    font-family: Montserrat;
+    font-weight: 200;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+    background-color: var(--button-color);
+    border: var(--button-border);
+    padding: .5rem 1.5rem;
+}
+
+.cta-button a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: var(--button-color-hover);
+    border: var(--button-border-hover);
+}

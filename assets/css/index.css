@@ -1,0 +1,887 @@
+.hero-main {
+    width: 100%;
+    height: 100vh;
+    padding: 0 12.76% 0 12.76%;
+}
+
+.hero-container {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    background-image: url('../images/heroHome/heroBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* --------------------- NAV --------------------- */
+header {
+    width: 100%;
+    height: 8.75rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo {
+    height: 50px;
+    flex: 0 0 100px;
+
+
+    background-image: url('../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: var(--button-color);
+    margin: 4px 0;
+}
+
+nav {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    text-transform: uppercase;
+
+}
+
+nav ul li {
+    padding: .9rem;
+}
+
+nav ul li a {
+    font-family: KamerikBold-8;
+
+    font-size: clamp(0.85rem, 0.833rem + 0.056vw, 0.9rem);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+    color: rgb(192, 192, 192);
+}
+
+
+.explore-button {
+    font-family: Montserrat;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+    font-size: clamp(0.85rem, 0.833rem + 0.056vw, 0.9rem);
+    background-color: var(--button-color);
+    border: var(--button-border);
+    padding: 1.1rem 2rem;
+}
+
+.explore-button:hover {
+    background-color: var(--button-color-hover);
+    border: var(--button-border-hover);
+}
+
+/* --------------------- HERO --------------------- */
+
+.hero-body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 12%;
+}
+
+.main-motto h1 {
+    font-size: clamp(2.5rem, 1.667rem + 2.778vw, 5rem);
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.challenge {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.challenge-text,
+.heights-text {
+    font-size: clamp(1.4rem, 0.825rem + 1.917vw, 3.125rem);
+    letter-spacing: 0.1em;
+    font-family: KamerikThin-6;
+}
+
+.line-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(155%) translateY(-10%);
+}
+
+.line-1 {
+    height: 25vh;
+    width: 2px;
+    background-color: #b3b3b3;
+}
+
+.line-2 {
+    height: 10vh;
+    width: 2px;
+    background-color: #b3b3b3;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #b3b3b3;
+}
+
+.heights-text {
+    color: white;
+    transform: translateX(43%);
+}
+
+.scroll {
+    text-transform: uppercase;
+    font-family: KamerikThin-6;
+    font-size: clamp(0.7rem, 0.667rem + 0.111vw, 0.8rem);
+    transform: translateX(90%) translateY(-150%);
+    color: white;
+}
+
+/* --------------------- EVOLUTION SECTION --------------------- */
+
+.evolution-container {
+    width: 100%;
+    height: auto;
+    padding: 10rem 12.76% 4rem 12.76%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.evolution-main {
+    flex: 1;
+    width: 100%;
+}
+
+.evolution-title {
+    font-size: clamp(1.5rem, 1.125rem + 1.25vw, 2.625rem);
+}
+
+.evolution-body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.evolution-main-text {
+    padding: 2rem 0 4rem 0;
+    width: auto;
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+}
+
+.evolution-articles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.evolution-articles h2 {
+    font-size: clamp(1.1rem, 0.842rem + 0.861vw, 1.875rem);
+}
+
+.evolution-articles .art-1,
+.evolution-articles .art-2,
+.evolution-articles .art-3,
+.evolution-articles .art-4 {
+    flex: 1 1 calc(50% - 1rem);
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+
+
+.evolution-image {
+    flex: 1 0 200px;
+
+    aspect-ratio: 1/1;
+
+    margin-left: 2rem;
+
+    background-image: url('../images/heroHome/evolution.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* ------------------ CLIMBING STYLES ---------------- */
+
+.climbing-styles {
+    width: 100%;
+    padding: 6rem 12.76% 4rem 12.76%;
+}
+
+.c-styles-main {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.c-styles-top {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.c-styles-title {
+    flex: 3;
+    font-size: clamp(1.5rem, 1.125rem + 1.25vw, 2.625rem);
+}
+
+.c-styles-text {
+    flex: 3 0 1%;
+
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+}
+
+.c-styles-bottom {
+    flex: 2;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.c-bouldering,
+.c-sport,
+.c-traditional {
+    flex: 1 0 30%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: flex-start;
+}
+
+.c-bouldering-image {
+    aspect-ratio: 16/12;
+    width: 100%;
+
+    background-image: url('../images/heroHome/bouldering2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.c-bouldering-title,
+.c-sport-title,
+.c-traditional-title {
+    font-family: KamerikBold-8;
+    font-size: clamp(0.9rem, 0.7rem + 0.667vw, 1.5rem);
+    margin: 1rem 0 1rem 0;
+}
+
+.c-bouldering-text,
+.c-sport-text,
+.c-traditional-text {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.c-sport-image {
+    aspect-ratio: 16/12;
+    width: 100%;
+
+    background-image: url('../images/heroHome/sportClimbing.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.c-traditional-image {
+    aspect-ratio: 16/12;
+    width: 100%;
+
+    background-image: url('../images/heroHome/tradClimbing.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+
+.c-styles-button {
+    margin-top: 1rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    cursor: pointer;
+}
+
+
+/* ------------------ CLIMBING GALLERY ---------------- */
+
+.climbing-gallery {
+    width: 100%;
+    padding: 6rem 12.76% 6rem 12.76%;
+}
+
+.gallery-main {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-title {
+    font-size: clamp(1.5rem, 1.125rem + 1.25vw, 2.625rem);
+}
+
+.gallery-subtitle {
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+}
+
+.gallery-body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.gallery-image-1 {
+    flex: 1 1 calc(33.333% - 2rem);
+    aspect-ratio: 1 / 1;
+    width: 100%;
+
+    background-image: url('../images/heroHome/img-gallery-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.gallery-image-2 {
+    flex: 1 1 calc(33.333% - 2rem);
+    aspect-ratio: 1 / 1;
+    width: 100%;
+
+    background-image: url('../images/heroHome/img-gallery-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.gallery-image-3 {
+    flex: 1 1 calc(33.333% - 2rem);
+    aspect-ratio: 1 / 1;
+    width: 100%;
+
+    background-image: url('../images/heroHome/img-gallery-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.gallery-image-4 {
+    flex: 1 1 calc(33.333% - 2rem);
+    aspect-ratio: 1 / 1;
+    width: 100%;
+
+    background-image: url('../images/heroHome/img-gallery-4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.gallery-image-5 {
+    flex: 1 1 calc(33.333% - 2rem);
+    aspect-ratio: 1 / 1;
+    width: 100%;
+
+    background-image: url('../images/heroHome/img-gallery-5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.gallery-image-6 {
+    flex: 1 1 calc(33.333% - 2rem);
+    aspect-ratio: 1 / 1;
+    width: 100%;
+
+    background-image: url('../images/heroHome/img-gallery-6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* ------------------- FOOTER ------------------- */
+
+footer {
+    width: 100%;
+    background-color: var(--primary-color);
+
+    padding: 2rem 12.76% 2rem 12.76%;
+    color: white;
+}
+
+.newsletter-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10rem 0 10rem;
+}
+
+.newsletter-text {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.newsletter-box {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.newsletter-box input {
+    flex: 6;
+
+    border: var(--button-border);
+    padding: .6rem;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.newsletter-box input:focus {
+    outline: none;
+}   
+
+.newsletter-box .cta-button {
+    background: white;
+    color: black;
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+
+    cursor: pointer;
+}
+
+.newsletter-box .cta-button:hover {
+    background-color: var(--button-color-hover);
+    border: 1px solid white;
+    color: white;
+}
+
+.footer-main {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0 2rem 0;
+}
+
+.footer-nav {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.footer-nav-top {
+    flex: 1;
+    padding: 2rem 0 0 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav-logo {
+    height: 50px;
+    flex: 0 0 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../images/logo-wh.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-nav-top ul {
+    flex: 7;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.footer-nav-top ul li {
+    list-style-type: none;
+}
+
+.footer-nav-top ul li a {
+    font-weight: bold;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-top ul li a:hover {
+    color: #b3b3b3;
+}
+
+.footer-nav-center {
+    flex: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+
+
+    padding-top: 2rem;
+}
+
+.footer-nav-center ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.footer-nav-center ul li {
+    list-style-type: none;
+}
+
+.footer-nav-center ul li a {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-center ul li a:hover {
+    color: #b3b3b3;
+}
+
+.footer-nav-bottom {
+    flex: 1;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.footer-nav-bottom ul {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: .5rem;
+
+    cursor: pointer;
+}
+
+.footer-nav-bottom ul li {
+    list-style-type: none;
+}
+
+.footer-nav-bottom ul li a {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-bottom ul li a img {
+    flex: 1 0 30px;
+    height: 30px;
+    min-width: 30px;
+}
+
+.footer-nav-bottom p {
+    flex: 8;
+
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ------------------- MEDIA QUERIES ------------ */
+
+@media screen and (max-width: 1100px) {
+    /* body {
+        background-color: rgb(68, 208, 13);
+    } */
+
+    .evolution-container {
+        flex-direction: column;
+        padding: 5rem 12.76% 4rem 12.76%;
+    }
+
+    .evolution-image {
+        margin-left: 0;
+        margin-top: 2rem;
+
+        aspect-ratio: 16/9;
+    }
+
+    .climbing-styles {
+        padding: 1rem 12.76% 1rem 12.76%;
+    }
+}
+
+@media screen and (max-width: 1006px) {
+    /* body {
+        background-color: rgb(208, 13, 13);
+    } */
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #nav-menu.active {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 6rem;
+    }
+
+    .menu-icon.translate {
+        position: relative;
+        right: -114px;
+    }
+
+    nav ul {
+        position: relative;
+        right: 40px;
+    }
+
+    nav ul li {
+        padding: .2rem;
+    }
+
+    .explore-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    /* body {
+        background-color: rgb(13, 88, 208);
+    } */
+
+    .c-styles-top {
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .c-styles-bottom {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .gallery-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-container {
+        padding: 0 5% 0 5%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    /* body {
+        background-color: rgb(143, 13, 208);
+    } */
+
+    .evolution-container {
+        padding: 5rem 5% 4rem 5%;
+    }
+
+    .evolution-main-text {
+        width: auto;
+    }
+
+    .line-1,
+    .line-2,
+    .arrow,
+    .scroll {
+        display: none;
+    }
+
+    .line-arrow {
+        transform: none;
+    }
+
+    .heights-text {
+        transform: none;
+        color: black;
+    }
+
+    .evolution-articles {
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .evolution-articles .art-1,
+    .evolution-articles .art-2,
+    .evolution-articles .art-3,
+    .evolution-articles .art-4 {
+        flex: 1 1 100%;
+    }
+
+    .climbing-styles {
+        padding: 1rem 5% 1rem 5%;
+    }
+
+    .climbing-gallery {
+        padding: 5rem 5% 5rem 5%;
+    }
+
+    .newsletter-container {
+        padding: 0;
+        align-items: center;
+    }
+
+    .newsletter-box {
+        margin-top: 1rem;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 0;
+    }
+
+    .newsletter-box input {
+        min-width: 350px;
+    }
+
+    .footer-main {
+        padding: 0;
+    }
+
+    .footer-nav-top {
+        padding: 0;
+        flex-flow: column nowrap;
+    }
+
+    .footer-nav-logo {
+        width: 100px;
+        flex: 0 0 100px;
+    }
+
+    .footer-nav-center {
+        flex-direction: row;
+    }
+
+    .footer-nav-bottom {
+        padding: 1rem 0 1rem 0;
+        flex-direction: column;
+    }
+
+    .footer-nav-bottom p {
+        padding: 1rem 0 0 0;
+    }
+
+    .footer-nav-bottom ul {
+        justify-content: center;
+    }
+
+    .main-motto h1 {
+        color: white;
+    }
+
+    .hero-container {
+        background-image: url('../images/heroHome/heroBG_mobile.jpg');
+    }
+
+    .logo {
+        background-image: url('../images/logo-wh.png');
+    }
+
+    .challenge-text,
+    .heights-text {
+        color: white;
+    }
+
+    .bar {
+        background-color: white;
+    }
+}

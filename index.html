@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset CSS -->
+     <link rel="stylesheet" href="assets/css/reset.css">
+     <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Home CSS -->
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Rock Climbing - Home</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.getElementById('menu-icon');
+            const navMenu = document.getElementById('nav-menu');
+    
+            menuIcon.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                menuIcon.classList.toggle('translate');
+            });
+        });
+    </script>
+</head>
+<body>
+    <main>
+        <section class="hero-container">
+            <div class="hero-main">
+                <header>
+                    <a href="index.html" class="logo"></a>
+                    <nav>
+                        <div class="menu-icon" id="menu-icon">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <ul id="nav-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="assets/pages/athletesPage.html">Athletes</a></li>
+                            <li><a href="assets/pages/competitionsPage.html">Competitions</a></li>
+                            <li><a href="assets/pages/contactPage.html">Contact</a></li>
+                            <li><a href="#evolution" class="explore-button cta-button">explore more</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div class="hero-body">
+                    <aside class="main-motto">
+                        <h1>ROCK CLIMBING</h1>
+                        <div class="challenge">
+                            <span class="challenge-text">CHALLENGE THE</span>
+                            <div class="line-arrow">
+                                <div class="line-1"></div>
+                                <div class="arrow"></div>
+                                <span class="heights-text">HEIGHTS</span>
+                                <div class="line-2"></div>
+                                <div class="arrow"></div>
+                                <div class="scroll">Scroll down</div>
+                            </div>
+                        </div>
+                    </aside>
+                  </div>
+            </div>
+        </section>
+
+        <section class="evolution-container">
+            <div class="evolution-main" id="evolution">
+                <h1 class="evolution-title">The Evolution of Rock <br> Climbing</h1>
+                <div class="evolution-body">
+                    <div class="evolution-main-text">
+                        <p>
+                            Rock climbing has a rich history that dates back to the late 19th 
+                            century, evolving from a mountaineering necessity to a celebrated 
+                            sport. Discover how modern gear has transformed climbing into a 
+                            safer and more accessible adventure for all.
+                        </p>
+                    </div>
+                    <div class="evolution-articles">
+                        <div class="art-1">
+                            <h2 class="art-1-title">2025 years</h2>
+                            <p class="art-1-text">
+                                From its early days, rock climbing has seen 
+                                significant milestones, including the 
+                                introduction of safety gear and the rise of 
+                                various climbing styles, fostering a vibrant 
+                                community of climbers.
+                            </p>
+                        </div>
+                        <div class="art-2">
+                            <h2 class="art-2-title">10000 climbers</h2>
+                            <p class="art-2-text">
+                                Today, rock climbing boasts a global 
+                                community of over 10,000 climbers, each 
+                                contributing to the sport’s dynamic culture 
+                                and shared experiences.
+                            </p>
+                        </div>
+                        <div class="art-3">
+                            <h2 class="art-3-title">50 competitions</h2>
+                            <p class="art-3-text">
+                                With more than 50 competitions held 
+                                annually, climbers showcase their skills and 
+                                passion, pushing the boundaries of what is
+                                possible in the sport.
+                            </p>
+                        </div>
+                        <div class="art-4">
+                            <h2 class="art-4-title">100 styles</h2>
+                            <p class="art-4-text">
+                                Rock climbing now includes over 100 
+                                distinct styles, from bouldering to sport 
+                                climbing, each offering unique challenges 
+                                and experiences for climbers of all levels.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="evolution-image"></div>
+        </section>
+
+        <section class="climbing-styles">
+            <div class="c-styles-main">
+                <div class="c-styles-top">
+                    <h1 class="c-styles-title">Explore Diverse Climbing <br> Styles</h1>
+                    <p class="c-styles-text">Discover the thrill of bouldering, sport climbing, and traditional 
+                        climbing. Each style offers unique challenges and rewards, catering 
+                        to climbers of all skill levels. Embrace the adventure and find your 
+                        perfect climbing style today.
+                    </p>
+                </div>
+                <div class="c-styles-bottom">
+                    <div class="c-bouldering">
+                        <div class="c-bouldering-image"></div>
+                        <div class="c-bouldering-title">Bouldering: Strength and <br> Agility</div>
+                        <div class="c-bouldering-text">
+                            <p>Bouldering involves short, powerful climbs without ropes. 
+                                It's a test of strength and technique, perfect for those who 
+                                love a challenge.
+                            </p>
+                        </div>
+                        <div class="cta-button c-styles-button"><a href="assets/pages/competitionsPage.html">Learn More</a></div>
+                    </div>
+                    
+                    <div class="c-sport">
+                        <div class="c-sport-image"></div>
+                        <div class="c-sport-title">Sport Climbing: Precision and <br>Endurance</div>
+                        <div class="c-sport-text">
+                            <p>Sport climbing focuses on endurance and precision, using 
+                                ropes and anchors. It's ideal for those seeking a longer, 
+                                strategic climb.                                
+                            </p>
+                        </div>
+                        <div class="cta-button c-styles-button"><a href="assets/pages/competitionsPage.html">Learn More</a></div>
+                    </div>
+
+                    <div class="c-traditional">
+                        <div class="c-traditional-image"></div>
+                        <div class="c-traditional-title">Traditional Climbing: Adventure 
+                            <br> and Skill</div>
+                        <div class="c-traditional-text">
+                            <p>Traditional climbing requires placing your own protection. 
+                                It's a true adventure, demanding skill and a love for the 
+                                outdoors.                                
+                            </p>
+                        </div>
+                        <div class="cta-button c-styles-button"><a href="assets/pages/competitionsPage.html">Learn More</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="climbing-gallery">
+            <div class="gallery-main">
+                <h1 class="gallery-title">Climbing Adventures</h1>
+                <p class="gallery-subtitle">Explore stunning visuals of rock climbing that inspire and captivate.</p>
+                <div class="gallery-body">
+                    <div class="gallery-image-1"></div>
+                    <div class="gallery-image-2"></div>
+                    <div class="gallery-image-3"></div>
+                    <div class="gallery-image-4"></div>
+                    <div class="gallery-image-5"></div>
+                    <div class="gallery-image-6"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <p>Subscribe for exclusive climbing insights and updates!</p>
+                </div>
+                <form class="newsletter-box" action="index.html" method="GET">
+                    <input type="email"  placeholder="Enter your email" required>
+                    <input type="hidden" name="SUBMIT-SUCCESSFULLY" value="true">
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-main">
+                <div class="footer-nav">
+                    <div class="footer-nav-top">
+                        <div class="footer-nav-logo"></div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="assets/pages/athletesPage.html">Athletes</a></li>
+                            <li><a href="assets/pages/competitionsPage.html">Competitions</a></li>
+                            <li><a href="assets/pages/contactPage.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-center">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-bottom">
+                        <ul>
+                            <li><a href="https://www.facebook.com/groups/escaladagranada/?locale=es_ES" target="_blank"><img src="assets/images/heroHome/icon-facebook-wh.png" alt="facebook"></a></li>
+                            <li><a href="https://www.instagram.com/climbing_worldwide/?hl=es" target="_blank"><img src="assets/images/heroHome/icon-instagram-wh.png" alt="instagram"></a></li>
+                            <li><a href="https://twitter.com/climbing?lang=es" target="_blank"><img src="assets/images/heroHome/icon-x-wh.png" alt="x"></a></li>
+                        </ul>
+                        <p>© Copyright 2024 Rock Climbing. All rights reserved.</p>
+                    </div>
+                </div>
+        </footer>
+    </main>
+</body>
+</html>

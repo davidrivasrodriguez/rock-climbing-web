@@ -1,0 +1,1407 @@
+.header-container {
+    width: 100%;
+    height: 62vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    aspect-ratio: 16/9;
+    background-image: url('../images/competitionPage/header1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 0 12.76% 0 12.76%;
+}
+
+.header-main {
+    width: 100%;
+    height: 100vh;
+
+    padding: 0 12.76% 0 12.76%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+/* --------------------- NAV --------------------- */
+header {
+    width: 100%;
+    height: 8.75rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo {
+    height: 50px;
+    flex: 0 0 100px;
+
+
+    background-image: url('../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: var(--button-color);
+    margin: 4px 0;
+}
+
+nav {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    text-transform: uppercase;
+
+}
+
+nav ul li {
+    padding: .9rem;
+}
+
+nav ul li a {
+    font-family: KamerikBold-8;
+
+    font-size: clamp(0.85rem, 0.833rem + 0.056vw, 0.9rem);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+    color: rgb(192, 192, 192);
+}
+
+
+.explore-button {
+    font-family: Montserrat;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+    font-size: clamp(0.85rem, 0.833rem + 0.056vw, 0.9rem);
+    background-color: var(--button-color);
+    border: var(--button-border);
+    padding: 1.1rem 2rem;
+}
+
+.explore-button:hover {
+    background-color: var(--button-color-hover);
+    border: var(--button-border-hover);
+}
+
+/* --------------------- HEADER --------------------- */
+
+.header-body {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 4rem 0 0 0;
+
+    position: relative;
+    z-index: 99;
+}
+
+.header-title {
+    color: white;
+    font-size: clamp(2.5rem, 1.667rem + 2.778vw, 5rem);
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.header-subtitle {
+    color: white;
+    font-size: clamp(1.4rem, 1.033rem + 1.222vw, 2.5rem);
+    letter-spacing: 0.1em;
+}
+
+/* --------------------- COMPETITIONS FEATURES --------------------- */
+
+.competitions-features {
+    width: 100%;
+    margin-top: 65vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 99;
+    gap: 1rem;
+
+}
+
+.competitions-features-list {
+    display: none;
+    width: 100%;
+    padding: 4rem 12.76% 0 12.76%;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.feature {
+    background-color: white;
+    padding: 1.5rem;
+
+    width: 30%;
+
+    border-radius: .2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    box-shadow: var(--main-box-shadow);
+}
+
+.feature-title {
+    color: #808080;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.feature-description {
+    font-size: clamp(0.9rem, 0.7rem + 0.667vw, 1.5rem);
+    font-weight: bold;
+}
+
+.feature-icon {
+    margin-bottom: 1rem;
+}
+
+.ft-1 .feature-icon {
+    width: 41px;
+    height: 41px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M8 2v4'/><path d='M16 2v4'/><rect width='18' height='18' x='3' y='4' rx='2'/><path d='M3 10h18'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.ft-2 .feature-icon {
+    width: 41px;
+    height: 41px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M6 9H4.5a2.5 2.5 0 0 1 0-5H6'/><path d='M18 9h1.5a2.5 2.5 0 0 0 0-5H18'/><path d='M4 22h16'/><path d='M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22'/><path d='M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22'/><path d='M18 2H6v7a6 6 0 0 0 12 0V2Z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.ft-3 .feature-icon {
+    width: 41px;
+    height: 41px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2'/><circle cx='9' cy='7' r='4'/><path d='M22 21v-2a4 4 0 0 0-3-3.87'/><path d='M16 3.13a4 4 0 0 1 0 7.75'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.ft-4 .feature-icon {
+    width: 41px;
+    height: 41px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15'/><path d='M11 12 5.12 2.2'/><path d='m13 12 5.88-9.8'/><path d='M8 7h8'/><circle cx='12' cy='17' r='5'/><path d='M12 18v-2h-.5'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* --------------------- UPCOMING COMPETITIONS --------------------- */
+
+.upcoming-competitions {
+    width: 100%;
+    padding: 15rem 12.76% 4rem 12.76%;
+}
+
+.upcoming-competitions h1 {
+    font-size: clamp(1.5rem, 1.125rem + 1.25vw, 2.625rem);
+}
+
+.upcoming-competitions-container {
+    width: 100%;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.upcoming-competitions-item {
+    flex: 1 0 30%;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    padding-bottom: 1rem;
+
+    box-shadow: var(--main-box-shadow);
+    border-radius: .2rem;
+}
+
+.item-1-image {
+    width: 100%;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    aspect-ratio: 16/4;
+
+    background-image: url('../images/competitionPage/bolderDash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+
+    position: relative;
+    z-index: 9;
+}
+
+.item-1-prize {
+    position: absolute;
+    z-index: 99;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: clamp(0.7rem, 0.642rem + 0.194vw, 0.875rem);
+}
+
+.item-1-content {
+    flex: 1;
+    width: 100%;
+    color: #808080;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+
+    padding: .5rem 0 .5rem 1rem;
+}
+
+.item-1-title {
+    padding-bottom: .5rem;
+    font-weight: bold;
+    color: black;
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+}
+
+.item-1-date::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 2v4'/%3E%3Cpath d='M16 2v4'/%3E%3Crect width='18' height='18' x='3' y='4' rx='2'/%3E%3Cpath d='M3 10h18'/%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.item-1-place::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E");
+
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.item-1-reg::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpolyline points='12 6 12 12 16 14'/%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.item-1-tags {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 1rem;
+    padding: 0rem 0 .5rem 1.5rem;
+
+    font-size: clamp(0.7rem, 0.642rem + 0.194vw, 0.875rem);
+}
+
+.tag {
+    padding: .2rem .5rem;
+    background-color: #f7f7f7;
+    border-radius: 1rem;
+    border: 1px solid #80808012;
+}
+
+.item-1-register {
+    flex: 1;
+    width: 96%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    padding: .5rem 0 .5rem 0;
+}
+
+.item-1-register a {
+    width: 100%;
+    text-align: center;
+}
+
+.item1,
+.item-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-2-image {
+    width: 100%;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    aspect-ratio: 16/4;
+
+    background-image: url('../images/competitionPage/summitSeries.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 45%;
+
+    position: relative;
+    z-index: 9;
+}
+
+.item-2-prize {
+    position: absolute;
+    z-index: 99;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: clamp(0.7rem, 0.642rem + 0.194vw, 0.875rem);
+}
+
+.item-2-content {
+    flex: 1;
+    width: 100%;
+    color: #808080;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+
+    padding: .5rem 0 .5rem 1rem;
+}
+
+.item-2-title {
+    padding-bottom: .5rem;
+    font-weight: bold;
+    color: black;
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+}
+
+.item-2-date::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 2v4'/%3E%3Cpath d='M16 2v4'/%3E%3Crect width='18' height='18' x='3' y='4' rx='2'/%3E%3Cpath d='M3 10h18'/%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.item-2-place::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E");
+
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.item-2-reg::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpolyline points='12 6 12 12 16 14'/%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.item-2-tags {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 1rem;
+    padding: 0rem 0 .5rem 1.5rem;
+
+    font-size: clamp(0.7rem, 0.642rem + 0.194vw, 0.875rem);
+}
+
+.tag {
+    padding: .2rem .5rem;
+    background-color: #f7f7f7;
+    border-radius: 1rem;
+    border: 1px solid #80808012;
+}
+
+.item-2-register {
+    flex: 1;
+    width: 96%;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    padding: .5rem 0 .5rem 0;
+}
+
+.item-2-register a {
+    width: 100%;
+    text-align: center;
+}
+
+/* ------------------------------ COMPETITION TIMELINE ------------------- */
+
+.competition-timeline {
+    width: 100%;
+    padding: 6rem 12.76% 4rem 12.76%;
+}
+
+.competition-timeline h1 {
+    font-size: clamp(1.5rem, 1.125rem + 1.25vw, 2.625rem);
+}
+
+.timeline-container {
+    width: 100%;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.timeline-left {
+    flex: 1 0 40%;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    gap: 15rem;
+}
+
+.timeline-item-1-content {
+    width: 100%;
+    color: #808080;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+
+    padding: 1.5rem 1rem 1.5rem 1rem;
+
+    border-radius: .2rem;
+    background-color: white;
+    box-shadow: var(--main-box-shadow);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.timeline-item-1-content-text {
+    flex: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.timeline-item-1-title {
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+    font-weight: bold;
+    color: black;
+}
+
+.timeline-item-1-date {
+    color: var(--primary-color);
+}
+
+.timeline-item-1-winner {
+    color: #16a34a;
+}
+
+.timeline-item-1-content .timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+
+    position: relative;
+    left: 3.7rem;
+}
+
+
+.timeline-item-3-content {
+    width: 100%;
+    color: #808080;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+
+    padding: 1.5rem 1rem 1.5rem 1rem;
+
+    border-radius: .2rem;
+    background-color: white;
+    box-shadow: var(--main-box-shadow);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.timeline-item-3-content-text {
+    flex: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.timeline-item-3-title {
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+    font-weight: bold;
+    color: black;
+}
+
+.timeline-item-3-date {
+    color: var(--primary-color);
+}
+
+.timeline-item-3-content .timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+
+    position: relative;
+    left: 3.7rem;
+}
+
+
+.timeline-divider {
+    width: 4px;
+    height: 480px;
+    background-color: #e5e7eb;
+    margin: 1rem 0;
+}
+
+.timeline-right {
+    margin-top: 12.3rem;
+    flex: 1 0 40%;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    box-shadow: var(--main-box-shadow);
+}
+
+
+.timeline-item-2-content {
+    width: 100%;
+    color: #808080;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+
+    padding: 1.5rem 1rem 1.5rem 1rem;
+
+    border-radius: .2rem;
+    background-color: white;
+    box-shadow: var(--main-box-shadow);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.timeline-item-2-content-text {
+    flex: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.timeline-item-2-title {
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+    font-weight: bold;
+    color: black;
+}
+
+.timeline-item-2-date {
+    color: var(--primary-color);
+}
+
+.timeline-item-2-content .timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+
+    position: relative;
+    right: 3.7rem;
+}
+
+
+/* ---------------------- FEATURED ATHLETES --------------------- */
+
+.featured-athletes {
+    width: 100%;
+    padding: 6rem 12.76% 4rem 12.76%;
+}
+
+.featured-athletes h1 {
+    font-size: clamp(1.5rem, 1.125rem + 1.25vw, 2.625rem);
+}
+
+.featured-athletes-container {
+    width: 100%;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.featured-athlete {
+    flex: 1 0 50%;
+    height: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    border-radius: .2rem;
+    box-shadow: var(--main-box-shadow);
+}
+
+.athlete-1 {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.athlete-1-content {
+    width: 100%;
+}
+
+.athlete-1-image {
+    width: 100%;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    aspect-ratio: 16/6;
+
+    background-image: url('../images/competitionPage/sara-boulding.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 5%;
+
+    position: relative;
+}
+
+.athlete-1-image-content {
+    position: absolute;
+    bottom: .5rem;
+    left: 1rem;
+    color: white;
+}
+
+.athlete-1-name {
+    font-weight: bold;
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+}
+
+.athlete-1-desc {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.athlete-1-titles {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 1rem;
+    font-weight: 600;
+
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+
+
+}
+
+.athlete-1-titles a {
+    margin-left: auto;
+}
+
+.athlete-1-titles::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Ccircle cx='12' cy='8' r='6'/%3E%3Cpath d='M15.477 12.89 17 22l-5-3-5 3 1.523-9.11'/%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.athlete-2 {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.athlete-2-content {
+    width: 100%;
+}
+
+.athlete-2-image {
+    width: 100%;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    aspect-ratio: 16/6;
+
+    background-image: url('../images/competitionPage/marcus-faster.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    position: relative;
+}
+
+.athlete-2-image-content {
+    position: absolute;
+    bottom: .5rem;
+    left: 1rem;
+    color: white;
+}
+
+.athlete-2-name {
+    font-weight: bold;
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+}
+
+.athlete-2-desc {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.athlete-2-titles {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 1rem;
+    font-weight: 600;
+
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+
+
+}
+
+.athlete-2-titles a {
+    margin-left: auto;
+}
+
+.athlete-2-titles::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Ccircle cx='12' cy='8' r='6'/%3E%3Cpath d='M15.477 12.89 17 22l-5-3-5 3 1.523-9.11'/%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+
+/* ---------------------- PRIZES & RULES --------------------- */
+
+.rules-prizes {
+    width: 100%;
+    padding: 6rem 12.76% 4rem 12.76%;
+}
+
+.rules-prizes h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 1.125rem + 1.25vw, 2.625rem);
+}
+
+.rules-prizes-container {
+    width: 100%;
+    margin-top: 2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.rules,
+.prizes {
+    flex: 1 0 50%;
+    padding: 2rem 1rem;
+    width: 50%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: white;
+    color: #808080;
+
+    border-radius: .2rem;
+    box-shadow: var(--main-box-shadow);
+}
+
+.rules h1,
+.prizes h1 {
+    font-size: clamp(0.9rem, 0.7rem + 0.667vw, 1.5rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.rules h1::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Cpath d='M8 21h12a2 2 0 0 0 2-2v-2H10v2a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v3h4'%3E%3C/path%3E%3Cpath d='M19 17V5a2 2 0 0 0-2-2H4'%3E%3C/path%3E%3Cpath d='M15 8h-5'%3E%3C/path%3E%3Cpath d='M15 12h-5'%3E%3C/path%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.prizes h1::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' %3E%3Crect x='3' y='8' width='18' height='4' rx='1'/%3E%3Cpath d='M12 8v13'/%3E%3Cpath d='M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7'/%3E%3Cpath d='M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5'/%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+
+}
+
+.rules-container,
+.prizes-container {
+    padding-left: 1rem;
+}
+
+.rules-container p::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2322313f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14'%3E%3C/path%3E%3Cpath d='m12 5 7 7-7 7'%3E%3C/path%3E%3C/svg%3E");
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: 5px;
+
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.prize-prof-title,
+.prize-am-title {
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+    font-weight: bold;
+    color: black;
+}
+
+
+/* ------------------- FOOTER ------------------- */
+
+footer {
+    width: 100%;
+    background-color: var(--primary-color);
+
+    margin-top: 2rem;
+    padding: 2rem 12.76% 2rem 12.76%;
+    color: white;
+}
+
+.newsletter-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10rem 0 10rem;
+}
+
+.newsletter-text {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.newsletter-box {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.newsletter-box input {
+    flex: 6;
+
+    border: var(--button-border);
+    padding: .6rem;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.newsletter-box input:focus {
+    outline: none;
+}
+
+.newsletter-box .cta-button {
+    background: white;
+    color: black;
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+
+    cursor: pointer;
+}
+
+.newsletter-box .cta-button:hover {
+    background-color: var(--button-color-hover);
+    border: 1px solid white;
+    color: white;
+}
+
+.footer-main {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0 2rem 0;
+}
+
+.footer-nav {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.footer-nav-top {
+    flex: 1;
+    padding: 2rem 0 0 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav-logo {
+    height: 50px;
+    flex: 0 0 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../images/logo-wh.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-nav-top ul {
+    flex: 7;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.footer-nav-top ul li {
+    list-style-type: none;
+}
+
+.footer-nav-top ul li a {
+    font-weight: bold;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-top ul li a:hover {
+    color: #b3b3b3;
+}
+
+.footer-nav-center {
+    flex: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+
+
+    padding-top: 2rem;
+}
+
+.footer-nav-center ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.footer-nav-center ul li {
+    list-style-type: none;
+}
+
+.footer-nav-center ul li a {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-center ul li a:hover {
+    color: #b3b3b3;
+}
+
+.footer-nav-bottom {
+    flex: 1;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.footer-nav-bottom ul {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: .5rem;
+
+    cursor: pointer;
+}
+
+.footer-nav-bottom ul li {
+    list-style-type: none;
+}
+
+.footer-nav-bottom ul li a {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-bottom ul li a img {
+    flex: 1 0 30px;
+    height: 30px;
+    min-width: 30px;
+}
+
+.footer-nav-bottom p {
+    flex: 8;
+
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ------------------- MEDIA QUERIES ------------ */
+
+@media screen and (max-width: 1006px) {
+    /* body {
+        background-color: rgb(208, 13, 13);
+    } */
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #nav-menu.active {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 6rem;
+    }
+
+    .menu-icon.translate {
+        position: relative;
+        right: -114px;
+    }
+
+    nav ul {
+        position: relative;
+        right: 40px;
+    }
+
+    nav ul li {
+        padding: .2rem;
+    }
+
+    .explore-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 938px) {
+    /* body {
+        background-color: rgb(13, 88, 208);
+    } */
+
+    .newsletter-container {
+        padding: 0 5% 0 5%;
+    }
+
+    .competitions-features {
+        flex-wrap: wrap;
+    }
+
+    .feature {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    /* body {
+        background-color: rgb(143, 13, 208);
+    } */
+
+    .newsletter-container {
+        padding: 0;
+        align-items: center;
+    }
+
+    .newsletter-box {
+        margin-top: 1rem;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 0;
+    }
+
+    .newsletter-box input {
+        min-width: 350px;
+    }
+
+    .footer-main {
+        padding: 0;
+    }
+
+    .footer-nav-top {
+        padding: 0;
+        flex-flow: column nowrap;
+    }
+
+    .footer-nav-logo {
+        width: 100px;
+        flex: 0 0 100px;
+    }
+
+    .footer-nav-center {
+        flex-direction: row;
+    }
+
+    .footer-nav-bottom {
+        padding: 1rem 0 1rem 0;
+        flex-direction: column;
+    }
+
+    .footer-nav-bottom p {
+        padding: 1rem 0 0 0;
+    }
+
+    .footer-nav-bottom ul {
+        justify-content: center;
+    }
+
+    .featured-athletes-container {
+
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rules,
+    .prizes {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    /* body {
+        background-color: rgb(208, 13, 13);
+    } */
+
+    .featured-athletes {
+        padding: 5rem 5% 4rem 5%;
+    }
+
+    .competitions-features {
+        display: none;
+    }
+
+    .competitions-features-list {
+        display: flex;
+        padding: 3rem 5% 0 5%;
+    }
+
+    .competitions-features-list h1 {
+        padding-bottom: 2rem;
+    }
+
+    .competitions-features-list ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background: white;
+        padding: 2rem;
+        border-radius: .2rem;
+        box-shadow: var(--main-box-shadow);
+        flex-wrap: wrap;
+        align-self: center;
+        gap: 1rem;
+    }
+
+    .competitions-features-list ul li {
+        list-style: none;
+        text-align: center;
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    .upcoming-competitions {
+        padding: 8rem 5% 4rem 5%;
+    }
+
+    .feature-title {
+        font-size: clamp(0.9rem, 0.7rem + 0.667vw, 1.5rem);
+    }
+
+    .feature-description {
+        font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    }
+
+    .upcoming-competitions-container {
+        flex-flow: column nowrap;
+        gap: 2rem;
+    }
+
+    .competition-timeline {
+        padding: 5rem 5% 4rem 5%;
+    }
+
+    .timeline-container {
+        flex-direction: column;
+    }
+
+    .timeline-divider,
+    .timeline-dot {
+        display: none;
+    }
+
+    .timeline-left,
+    .timeline-right {
+        width: 100%;
+        gap: 2rem;
+        margin: 0;
+    }
+
+    .timeline-item-3-content-text,
+    .timeline-item-2-content-text,
+    .timeline-item-1-content-text {
+        align-items: center;
+    }
+
+    .rules-prizes {
+        padding: 5rem 5% 4rem 5%;
+    }
+
+    .rules-prizes-container {
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    }
+}

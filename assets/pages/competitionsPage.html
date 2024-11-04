@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Competitions CSS -->
+    <link rel="stylesheet" href="../css/competitionsPage.css">
+    <title>Rock Climbing - Competitions</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.getElementById('menu-icon');
+            const navMenu = document.getElementById('nav-menu');
+    
+            menuIcon.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                menuIcon.classList.toggle('translate');
+            });
+        });
+    </script>
+</head>
+<body>
+    <main>
+        <section class="header-container">
+            <div class="header-main">
+                <header>
+                   <a href="../../index.html" class="logo"></a>
+                    <nav>
+                        <div class="menu-icon" id="menu-icon">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <ul id="nav-menu">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../pages/athletesPage.html">Athletes</a></li>
+                            <li><a href="../pages/competitionsPage.html">Competitions</a></li>
+                            <li><a href="../pages/contactPage.html">Contact</a></li>
+                            <li><a href="../../index.html#evolution" class="explore-button">explore more</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div class="header-body">
+                    <h1 class="header-title">Competitions</h1>
+                    <div class="header-subtitle">Push your limits. Reach new heights</div>
+                </div>
+            </div>
+
+            <div class="competitions-features">
+                <div class="feature ft-1">
+                    <div class="feature-icon"></div>
+                    <div class="feature-title">Events This Year</div>
+                    <div class="feature-description">12</div>
+                </div>
+                <div class="feature ft-2">
+                    <div class="feature-icon"></div>
+                    <div class="feature-title">Total Prize Pool</div>
+                    <div class="feature-description">$50,000</div>
+                </div>
+                <div class="feature ft-3">
+                    <div class="feature-icon"></div>
+                    <div class="feature-title">Participants</div>
+                    <div class="feature-description">500+</div>
+                </div>
+                <div class="feature ft-4">
+                    <div class="feature-icon"></div>
+                    <div class="feature-title">Categories</div>
+                    <div class="feature-description">6</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="competitions-features-list">
+            <h1>Competition Features</h1>
+            <ul>
+                <li>
+                    <div class="feature-title">Events This Year</div>
+                    <div class="feature-description">12</div>
+                </li>
+                <li>
+                    <div class="feature-title">Total Prize Pool</div>
+                    <div class="feature-description">$50,000</div>
+                </li>
+                <li>
+                    <div class="feature-title">Participants</div>
+                    <div class="feature-description">500+</div>
+                </li>
+                <li>
+                    <div class="feature-title">Categories</div>
+                    <div class="feature-description">6</div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="upcoming-competitions">
+            <h1>Upcoming Competitions</h1>
+            <div class="upcoming-competitions-container">
+                <div class="upcoming-competitions-item item-1">
+                    <div class="item-1-image">
+                        <div class="item-1-prize">$5,000</div>
+                    </div>
+                    <div class="item-1-content">
+                        <div class="item-1-title">Boulder Bash 2025</div>
+                        <div class="item-1-date">15/1/2025</div>
+                        <div class="item-1-place">The Crag Arena, Boulder, CO</div>
+                        <div class="item-1-reg">Registration closes: 1/1/2025</div>
+                    </div>
+                    <div class="item-1-tags">
+                        <div class="tag">Amateur</div>
+                        <div class="tag">Professional</div>
+                    </div>
+                    <div class="item-1-register cta-button">
+                        <a href="../pages/contactPage.html">Register Now</a>
+                    </div>
+                </div>
+
+                <div class="upcoming-competitions-item item-2">
+                    <div class="item-2-image">
+                        <div class="item-2-prize">$10,500</div>
+                    </div>
+                    <div class="item-2-content">
+                        <div class="item-2-title">Summit Series Finals</div>
+                        <div class="item-2-date">20/6/2025</div>
+                        <div class="item-2-place">Peak Performance Gym, Seattle, WA</div>
+                        <div class="item-2-reg">Registration closes: 5/6/2025</div>
+                    </div>
+                    <div class="item-2-tags">
+                        <div class="tag">Elite</div>
+                        <div class="tag">Master</div>
+                    </div>
+                    <div class="item-2-register cta-button">
+                        <a href="../pages/contactPage.html">Register Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="competition-timeline">
+            <h1>Competition Timeline</h1>
+            <div class="timeline-container">
+                <div class="timeline-left">
+                    <div class="timeline-item-1-content">
+                        <div class="timeline-item-1-content-text">
+                            <div class="timeline-item-1-title">Winter Warriors 2024</div>
+                            <div class="timeline-item-1-place">Alpine Center, Denver, CO</div>
+                            <div class="timeline-item-1-date">7/10/2024</div>
+                            <div class="timeline-item-1-winner">Winner: Alex Johnson</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-item-3-content">
+                        <div class="timeline-item-3-content-text">
+                            <div class="timeline-item-3-title">Summit Series Finals</div>
+                            <div class="timeline-item-3-place">Peak Performance Gym, Seattle, WA</div>
+                            <div class="timeline-item-3-date">20/6/2025</div>
+                        </div>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+
+                <div class="timeline-divider"></div>
+
+                <div class="timeline-right">
+                    <div class="timeline-item-2-content">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-item-2-content-text">
+                            <div class="timeline-item-2-title">Boulder Bash 2025</div>
+                            <div class="timeline-item-2-place">The Crag Arena, Boulder, CO</div>
+                            <div class="timeline-item-2-date">15/1/2025</div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="featured-athletes">
+            <h1>Featured Athletes</h1>
+            <div class="featured-athletes-container">
+                <div class="featured-athlete athlete-1">
+                    <div class="athlete-1-content">
+                        <div class="athlete-1-image">
+                            <div class="athlete-1-image-content">
+                                <div class="athlete-1-name">Sarah Chen</div>
+                                <div class="athlete-1-desc">Technical Routes</div>
+                            </div>
+                        </div>
+                        <div class="athlete-1-titles">3x Boulder Bash Champion <a href="athletesPage.html#athlete-1" class="cta-button">Stats</a></div>
+                    </div>
+                </div>
+                <div class="featured-athlete athlete-2">
+                    <div class="athlete-2-content">
+                        <div class="athlete-2-image">
+                            <div class="athlete-2-image-content">
+                                <div class="athlete-2-name">Marcus Rivera</div>
+                                <div class="athlete-2-desc">Professional Climber</div>
+                            </div>
+                        </div>
+                        <div class="athlete-2-titles">Current Speed Record Holder <a href="athletesPage.html#athlete-2" class="cta-button">Stats</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rules-prizes">
+            <h1>More Information</h1>
+            <div class="rules-prizes-container">
+                <div class="rules">
+                    <h1>Competition Rules</h1>
+                    <div class="rules-container">
+                        <p>Time limits: 4 minutes per boulder problem</p>
+                        <p>3 attempts maximum per problem</p>
+                        <p>Zone holds count for partial points</p>
+                    </div>
+                </div>
+                <div class="prizes">
+                    <h1>Prizes & Categories</h1>
+                    <div class="prizes-container">
+                        <div class="prize-prof">
+                            <div class="prize-prof-title">Professional</div>
+                            <div class="prize-prof-prizes">1st: $3,000 | 2nd: $1,500 | 3rd: $500</div>
+                        </div>
+                        <div class="prize-am">
+                            <div class="prize-am-title">Amateur</div>
+                            <div class="prize-am-prizes">1st: $1,000 | 2nd: $500 | 3rd: $250</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <p>Subscribe for exclusive climbing insights and updates!</p>
+                </div>
+                <form class="newsletter-box" action="index.html" method="GET">
+                    <input type="email"  placeholder="Enter your email" required>
+                    <input type="hidden" name="SUBMIT-SUCCESSFULLY" value="true">
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-main">
+                <div class="footer-nav">
+                    <div class="footer-nav-top">
+                        <div class="footer-nav-logo"></div>
+                        <ul>
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../pages/athletesPage.html">Athletes</a></li>
+                            <li><a href="../pages/competitionsPage.html">Competitions</a></li>
+                            <li><a href="../pages/contactPage.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-center">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-bottom">
+                        <ul>
+                            <li><a href="https://www.facebook.com/groups/escaladagranada/?locale=es_ES" target="_blank"><img src="../images/heroHome/icon-facebook-wh.png" alt="facebook"></a></li>
+                            <li><a href="https://www.instagram.com/climbing_worldwide/?hl=es" target="_blank"><img src="../images/heroHome/icon-instagram-wh.png" alt="instagram"></a></li>
+                            <li><a href="https://twitter.com/climbing?lang=es" target="_blank"><img src="../images/heroHome/icon-x-wh.png" alt="x"></a></li>
+                        </ul>
+                        <p>© Copyright 2024 Rock Climbing. All rights reserved.</p>
+                    </div>
+                </div>
+        </footer>
+    </main>
+</body>
+</html>

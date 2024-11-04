@@ -1,0 +1,725 @@
+.header-container {
+    width: 100%;
+    height: 62vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    aspect-ratio: 16/9;
+    background-image: url('../images/contactPage/header.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    padding: 0 12.76% 0 12.76%;
+}
+
+.header-main {
+    width: 100%;
+
+    padding: 0 12.76% 0 12.76%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+/* --------------------- NAV --------------------- */
+header {
+    width: 100%;
+    height: 8.75rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo {
+    height: 50px;
+    flex: 0 0 100px;
+
+
+    background-image: url('../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: var(--button-color);
+    margin: 4px 0;
+}
+
+nav {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    text-transform: uppercase;
+
+}
+
+nav ul li {
+    padding: .9rem;
+}
+
+nav ul li a {
+    font-family: KamerikBold-8;
+
+    font-size: clamp(0.85rem, 0.833rem + 0.056vw, 0.9rem);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav ul li a:hover {
+    color: rgb(192, 192, 192);
+}
+
+
+.explore-button {
+    font-family: Montserrat;
+    font-weight: 200;
+    text-decoration: none;
+    color: white;
+    font-size: clamp(0.85rem, 0.833rem + 0.056vw, 0.9rem);
+    background-color: var(--button-color);
+    border: var(--button-border);
+    padding: 1.1rem 2rem;
+}
+
+.explore-button:hover {
+    background-color: var(--button-color-hover);
+    border: var(--button-border-hover);
+}
+
+/* --------------------- HEADER --------------------- */
+
+.header-body {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 4rem 0 0 0;
+
+    position: relative;
+    z-index: 99;
+}
+
+.header-title {
+    color: white;
+    font-size: clamp(2.5rem, 1.667rem + 2.778vw, 5rem);
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+.header-subtitle {
+    color: white;
+    font-size: clamp(1.4rem, 1.033rem + 1.222vw, 2.5rem);
+    letter-spacing: 0.1em;
+}
+
+
+/* --------------------- CONTACT --------------------- */
+
+.contact-container {
+    width: 100%;
+    padding: 4rem 12.76% 4rem 12.76%;
+}
+
+.contact-container h1 {
+    font-size: clamp(2rem, 1.333rem + 2.222vw, 4rem);
+
+    text-align: start;
+    margin-bottom: 2rem;
+}
+
+.contact-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    box-shadow: var(--main-box-shadow);
+}
+
+.contact-left {
+    flex: 1 1 60%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-color: white;
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+
+    padding: 3rem;
+}
+
+.contact-message {
+    width: 100%;
+    font-size: clamp(1rem, 1rem + 0.5vw, 1.125rem);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.contact-left form {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+.form-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-group {
+    width: 48%;
+    margin-bottom: 15px;
+
+    padding: .5rem 0;
+}
+
+.full-w {
+    width: 100%;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: .5rem;
+    font-size: clamp(0.7rem, 0.642rem + 0.194vw, 0.875rem);
+    border: none;
+    border-bottom: 1px solid #808080;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    background-color: rgba(201, 201, 201, 0.1);
+    border-bottom: 1px solid #808080;
+    border-radius: .2rem;
+}
+
+.submit-button {
+    width: 100%;
+    padding-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+
+.contact-right {
+    flex: 1 1 40%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--primary-color);
+    border-top-right-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+    color: white;
+    padding: 3rem 3rem;
+}
+
+.contact-info-title {
+    flex: 1;
+    font-size: clamp(1rem, 1rem + 0.5vw, 1.125rem);
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    width: 100%;
+    text-align: flex-start;
+
+    padding-bottom: 4rem;
+}
+
+.contact-info-number {
+    flex: 1;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    padding-bottom: 2rem;
+
+    width: 100%;
+    text-align: flex-start;
+}
+
+.contact-info-number::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="%23a3acbc"><path d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"/></svg>');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.contact-info-email {
+    flex: 1;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    padding-bottom: 4rem;
+
+    width: 100%;
+    text-align: flex-start;
+}
+
+.contact-info-email::before {
+    content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 88.86" width="24" height="24" fill="%23a3acbc"><path d="M7.05,0H115.83a7.07,7.07,0,0,1,7,7.05V81.81a7,7,0,0,1-1.22,4,2.78,2.78,0,0,1-.66,1,2.62,2.62,0,0,1-.66.46,7,7,0,0,1-4.51,1.65H7.05a7.07,7.07,0,0,1-7-7V7.05A7.07,7.07,0,0,1,7.05,0Zm-.3,78.84L43.53,40.62,6.75,9.54v69.3ZM49.07,45.39,9.77,83.45h103L75.22,45.39l-11,9.21h0a2.7,2.7,0,0,1-3.45,0L49.07,45.39Zm31.6-4.84,35.46,38.6V9.2L80.67,40.55ZM10.21,5.41,62.39,47.7,112.27,5.41Z"/></svg>');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.contact-info-logo {
+    flex: 1 0 60px;
+    width: 210px;
+
+    background-image: url('../images/logo-wh.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    margin-bottom: 4rem;
+}
+
+.contact-right ul {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+
+    cursor: pointer;
+}
+
+.contact-right ul li {
+    list-style-type: none;
+}
+
+.contact-right ul li a img {
+    flex: 1 0 35px;
+    height: 35px;
+}
+
+/* ------------------- FOOTER ------------------- */
+
+footer {
+    width: 100%;
+    background-color: var(--primary-color);
+
+    margin-top: 2rem;
+    padding: 2rem 12.76% 2rem 12.76%;
+    color: white;
+}
+
+.newsletter-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10rem 0 10rem;
+}
+
+.newsletter-text {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.newsletter-box {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.newsletter-box input {
+    flex: 6;
+
+    border: var(--button-border);
+    padding: .6rem;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+}
+
+.newsletter-box input:focus {
+    outline: none;
+}
+
+.newsletter-box .cta-button {
+    background: white;
+    color: black;
+    font-size: clamp(0.9rem, 0.825rem + 0.25vw, 1.125rem);
+
+    cursor: pointer;
+}
+
+.newsletter-box .cta-button:hover {
+    background-color: var(--button-color-hover);
+    border: 1px solid white;
+    color: white;
+}
+
+.footer-main {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0 2rem 0;
+}
+
+.footer-nav {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.footer-nav-top {
+    flex: 1;
+    padding: 2rem 0 0 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav-logo {
+    height: 50px;
+    flex: 0 0 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../images/logo-wh.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer-nav-top ul {
+    flex: 7;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.footer-nav-top ul li {
+    list-style-type: none;
+}
+
+.footer-nav-top ul li a {
+    font-weight: bold;
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-top ul li a:hover {
+    color: #b3b3b3;
+}
+
+.footer-nav-center {
+    flex: 1;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+
+
+    padding-top: 2rem;
+}
+
+.footer-nav-center ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.footer-nav-center ul li {
+    list-style-type: none;
+}
+
+.footer-nav-center ul li a {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-center ul li a:hover {
+    color: #b3b3b3;
+}
+
+.footer-nav-bottom {
+    flex: 1;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.footer-nav-bottom ul {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: .5rem;
+
+    cursor: pointer;
+}
+
+.footer-nav-bottom ul li {
+    list-style-type: none;
+}
+
+.footer-nav-bottom ul li a {
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav-bottom ul li a img {
+    flex: 1 0 30px;
+    height: 30px;
+    min-width: 30px;
+}
+
+.footer-nav-bottom p {
+    flex: 8;
+
+    font-size: clamp(0.8rem, 0.733rem + 0.222vw, 1rem);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* ------------------- MEDIA QUERIES ------------------- */
+
+@media screen and (max-width: 938px) {
+    /* body {
+        background-color: rgb(13, 88, 208);
+    } */
+
+    .newsletter-container {
+        padding: 0 5% 0 5%;
+    }
+
+    .form-row {
+        flex-flow: column nowrap;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .contact-container {
+        padding: 4rem 5% 4rem 5%;
+    }
+
+    .contact-info-title {
+        padding-bottom: 0rem;
+    }
+
+    .contact-info-number,
+    .contact-info-email {
+        padding-bottom: 0rem;
+    }
+
+    .contact-info-number::before {
+        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="%23a3acbc"><path d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"/></svg>');
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    .contact-info-email::before {
+        content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 88.86" width="20" height="20" fill="%23a3acbc"><path d="M7.05,0H115.83a7.07,7.07,0,0,1,7,7.05V81.81a7,7,0,0,1-1.22,4,2.78,2.78,0,0,1-.66,1,2.62,2.62,0,0,1-.66.46,7,7,0,0,1-4.51,1.65H7.05a7.07,7.07,0,0,1-7-7V7.05A7.07,7.07,0,0,1,7.05,0Zm-.3,78.84L43.53,40.62,6.75,9.54v69.3ZM49.07,45.39,9.77,83.45h103L75.22,45.39l-11,9.21h0a2.7,2.7,0,0,1-3.45,0L49.07,45.39Zm31.6-4.84,35.46,38.6V9.2L80.67,40.55ZM10.21,5.41,62.39,47.7,112.27,5.41Z"/></svg>');
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    .contact-info-logo {
+        flex: 1 0 60px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1006px) {
+    /* body {
+        background-color: rgb(208, 13, 13);
+    } */
+
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #nav-menu.active {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 6rem;
+    }
+
+    .menu-icon.translate {
+        position: relative;
+        right: -114px;
+    }
+
+    nav ul {
+        position: relative;
+        right: 40px;
+    }
+
+    nav ul li {
+        padding: .2rem;
+    }
+
+    .explore-button {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    /* body {
+        background-color: rgb(143, 13, 208);
+    } */
+
+    .newsletter-container {
+        padding: 0;
+        align-items: center;
+    }
+
+    .newsletter-box {
+        margin-top: 1rem;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: 0;
+    }
+
+    .newsletter-box input {
+        min-width: 350px;
+    }
+
+    .footer-main {
+        padding: 0;
+    }
+
+    .footer-nav-top {
+        padding: 0;
+        flex-flow: column nowrap;
+    }
+
+    .footer-nav-logo {
+        width: 100px;
+        flex: 0 0 100px;
+    }
+
+    .footer-nav-center {
+        flex-direction: row;
+    }
+
+    .footer-nav-bottom {
+        padding: 1rem 0 1rem 0;
+        flex-direction: column;
+    }
+
+    .footer-nav-bottom p {
+        padding: 1rem 0 0 0;
+    }
+
+    .footer-nav-bottom ul {
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width: 556px) {
+    /* body {
+        background-color: rgb(208, 13, 13);
+    } */
+
+    .contact-box {
+        flex-flow: column-reverse nowrap;
+    }
+
+    .contact-info-logo {
+        margin-top: 2rem;
+    }
+
+    .contact-info-number,
+    .contact-info-email {
+        text-align: center;
+    }
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Athletes CSS -->
+    <link rel="stylesheet" href="../css/athletesPage.css">
+    <title>Rock Climbing - Athletes</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.getElementById('menu-icon');
+            const navMenu = document.getElementById('nav-menu');
+    
+            menuIcon.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                menuIcon.classList.toggle('translate');
+            });
+        });
+    </script>
+</head>
+<body>
+    <main>
+        <section class="header-container">
+            <div class="header-main">
+                <header>
+                   <a href="../../index.html" class="logo"></a>
+                    <nav>
+                        <div class="menu-icon" id="menu-icon">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <ul id="nav-menu">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../pages/athletesPage.html">Athletes</a></li>
+                            <li><a href="../pages/competitionsPage.html">Competitions</a></li>
+                            <li><a href="../pages/contactPage.html">Contact</a></li>
+                            <li><a href="../../index.html#evolution" class="explore-button">explore more</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div class="header-body">
+                    <h1 class="header-title">Elite Athletes</h1>
+                    <div class="header-subtitle">Meet the world's top climbing talents</div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="athletes-container">
+            <div class="athletes-box">
+
+                <div class="athlete-card athlete-1" id="athlete-1">
+                    <div class="athlete-image-container">
+                       <div class="athlete-image"></div>
+                    
+                        <div class="athlete-image-overlay"></div>
+                        <div class="athlete-header">
+                            <h2 class="athlete-name">Sarah Chen</h2>
+                            <p class="athlete-nickname">The Spider</p>
+                            <div class="athlete-meta">
+                                <span class="athlete-nationality">Canadian</span>
+                                <span class="athlete-age">25 years old</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="athlete-content">
+                        <p class="athlete-bio">Starting at age 12, Sarah quickly rose through the ranks of competitive climbing. Known for her incredible finger strength and dynamic style, she's revolutionized several classic boulder problems with her innovative beta.</p>
+
+                        <div class="athlete-section">
+                            <div class="section-header">
+                                <h3 class="section-title-1">Key Achievements</h3>
+                            </div>
+                            <ul class="achievements-list">
+                                <li class="achievement-item">
+                                    <span>3x Boulder Bash Champion</span>
+                                </li>
+                                <li class="achievement-item">
+                                    <span>World Cup Gold Medalist 2024</span>
+                                </li>
+                                <li class="achievement-item">
+                                    <span>National Record Holder - Speed Climbing</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="athlete-section">
+                            <div class="section-header">
+                                <h3 class="section-title-2">Specialties</h3>
+                            </div>
+                            <div class="specialties-container">
+                                <span class="specialty-tag">Technical Routes</span>
+                                <span class="specialty-tag">Dynamic Movements</span>
+                                <span class="specialty-tag">Overhangs</span>
+                            </div>
+                        </div>
+
+                        <div class="athlete-section">
+                            <div class="section-header">
+                                <h3 class="section-title-3">Performance Stats</h3>
+                            </div>
+                            <div class="stats-container">
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Strength</span>
+                                        <span class="stat-value">95%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Technique</span>
+                                        <span class="stat-value">98%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 98%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Endurance</span>
+                                        <span class="stat-value">90%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Mental</span>
+                                        <span class="stat-value">92%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="https://instagram.com/sarahchen" target="_blank"><img src="../images/heroHome/icon-instagram.png" alt="instagram"></a></li>
+                                <li><a href="https://x.com/sarahchen_climbing" target="_blank"><img src="../images/heroHome/icon-x.png" alt="x"></a></li>
+                                <li><a href="https://www.linkedin.com/in/sarahchen/" target="_blank"><img src="../images/heroHome/icon-linkedin.png" alt="linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="athlete-card athlete-2" id="athlete-2">
+                    <div class="athlete-image-container">
+                       <div class="athlete-image"></div>
+                    
+                        <div class="athlete-image-overlay"></div>
+                        <div class="athlete-header">
+                            <h2 class="athlete-name">Marcus Rivera</h2>
+                            <p class="athlete-nickname">The Flash</p>
+                            <div class="athlete-meta">
+                                <span class="athlete-nationality">Spanish</span>
+                                <span class="athlete-age">28 years old</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="athlete-content">
+                        <p class="athlete-bio">Marcus discovered climbing in urban Madrid, transforming from a street workout enthusiast to a professional climber. His explosive power and strategic mind make him a formidable competitor in both speed and lead climbing.</p>
+
+                        <div class="athlete-section">
+                            <div class="section-header">
+                                <h3 class="section-title-1">Key Achievements</h3>
+                            </div>
+                            <ul class="achievements-list">
+                                <li class="achievement-item">
+                                    <span>Current Speed Record Holder</span>
+                                </li>
+                                <li class="achievement-item">
+                                    <span>2x European Champion</span>
+                                </li>
+                                <li class="achievement-item">
+                                    <span>Olympic Finalist 2024</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="athlete-section">
+                            <div class="section-header">
+                                <h3 class="section-title-2">Specialties</h3>
+                            </div>
+                            <div class="specialties-container">
+                                <span class="specialty-tag">Speed Climbing</span>
+                                <span class="specialty-tag">Power Moves</span>
+                                <span class="specialty-tag">Competition Strategy</span>
+                            </div>
+                        </div>
+
+                        <div class="athlete-section">
+                            <div class="section-header">
+                                <h3 class="section-title-3">Performance Stats</h3>
+                            </div>
+                            <div class="stats-container">
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Strength</span>
+                                        <span class="stat-value">94%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 94%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Technique</span>
+                                        <span class="stat-value">88%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Endurance</span>
+                                        <span class="stat-value">96%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 96%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Mental</span>
+                                        <span class="stat-value">95%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="https://instagram.com/marcusrivera" target="_blank"><img src="../images/heroHome/icon-instagram.png" alt="instagram"></a></li>
+                                <li><a href="https://x.com/marcusrivera_climbing" target="_blank"><img src="../images/heroHome/icon-x.png" alt="x"></a></li>
+                                <li><a href="https://www.linkedin.com/in/marcusrivera/" target="_blank"><img src="../images/heroHome/icon-linkedin.png" alt="linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="athlete-card athlete-3" id="athlete-3">
+                    <div class="athlete-image-container">
+                       <div class="athlete-image"></div>
+                    
+                        <div class="athlete-image-overlay"></div>
+                        <div class="athlete-header">
+                            <h2 class="athlete-name">Emma Thompson</h2>
+                            <p class="athlete-nickname">The Solver</p>
+                            <div class="athlete-meta">
+                                <span class="athlete-nationality">British</span>
+                                <span class="athlete-age">24 years old</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="athlete-content">
+                        <p class="athlete-bio">Emma's methodical approach to climbing earned her the nickname 'The Solver'. With a background in gymnastics, she brings unprecedented flexibility and body control to the climbing world.</p>
+
+                        <div class="athlete-section">
+                            <div class="section-header">
+                                <h3 class="section-title-1">Key Achievements</h3>
+                            </div>
+                            <ul class="achievements-list">
+                                <li class="achievement-item">
+                                    <span>Bouldering World Champion 2024</span>
+                                </li>
+                                <li class="achievement-item">
+                                    <span>5 First Female Ascents</span>
+                                </li>
+                                <li class="achievement-item">
+                                    <span>Youth Olympic Gold Medalist</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="athlete-section">
+                            <div class="section-header">
+                                <h3 class="section-title-2">Specialties</h3>
+                            </div>
+                            <div class="specialties-container">
+                                <span class="specialty-tag">Problem Solving</span>
+                                <span class="specialty-tag">Slab Climbing</span>
+                                <span class="specialty-tag">Precision Movements</span>
+                            </div>
+                        </div>
+
+                        <div class="athlete-section">
+                            <div class="section-header">
+                                <h3 class="section-title-3">Performance Stats</h3>
+                            </div>
+                            <div class="stats-container">
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Strength</span>
+                                        <span class="stat-value">88%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Technique</span>
+                                        <span class="stat-value">99%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 99%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Endurance</span>
+                                        <span class="stat-value">87%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 87%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Mental</span>
+                                        <span class="stat-value">96%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 96%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="https://instagram.com/emmathompson" target="_blank"><img src="../images/heroHome/icon-instagram.png" alt="instagram"></a></li>
+                                <li><a href="https://x.com/emmathompson_climbing" target="_blank"><img src="../images/heroHome/icon-x.png" alt="x"></a></li>
+                                <li><a href="https://www.linkedin.com/in/emmathompson/" target="_blank"><img src="../images/heroHome/icon-linkedin.png" alt="linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="athlete-card athlete-4" id="athlete-4">
+                    <div class="athlete-image-container">
+                       <div class="athlete-image"></div>
+                    
+                        <div class="athlete-image-overlay"></div>
+                        <div class="athlete-header">
+                            <h2 class="athlete-name">Kai Nakamura</h2>
+                            <p class="athlete-nickname">The Ninja</p>
+                            <div class="athlete-meta">
+                                <span class="athlete-nationality">Japanese</span>
+                                <span class="athlete-age">26 years old</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="athlete-content">
+                        <p class="athlete-bio">Kai's climbing style combines traditional Japanese climbing philosophy with modern techniques. His fluid movement and extraordinary body tension have earned him recognition worldwide.</p>
+
+                        <div class="athlete-section">
+                            <div class="section-header">
+                                <h3 class="section-title-1">Key Achievements</h3>
+                            </div>
+                            <ul class="achievements-list">
+                                <li class="achievement-item">
+                                    <span>Asian Games Gold Medalist</span>
+                                </li>
+                                <li class="achievement-item">
+                                    <span>4x National Champion</span>
+                                </li>
+                                <li class="achievement-item">
+                                    <span>World Cup Overall Winner 2024</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="athlete-section">
+                            <div class="section-header">
+                                <h3 class="section-title-2">Specialties</h3>
+                            </div>
+                            <div class="specialties-container">
+                                <span class="specialty-tag">Dynamic Movements</span>
+                                <span class="specialty-tag">Coordination</span>
+                                <span class="specialty-tag">Complex Sequences</span>
+                            </div>
+                        </div>
+
+                        <div class="athlete-section">
+                            <div class="section-header">
+                                <h3 class="section-title-3">Performance Stats</h3>
+                            </div>
+                            <div class="stats-container">
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Strength</span>
+                                        <span class="stat-value">92%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Technique</span>
+                                        <span class="stat-value">97%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 97%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Endurance</span>
+                                        <span class="stat-value">93%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 93%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-header">
+                                        <span class="stat-name">Mental</span>
+                                        <span class="stat-value">94%</span>
+                                    </div>
+                                    <div class="stat-bar-bg">
+                                        <div class="stat-bar-fill" style="width: 94%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <ul>
+                                <li><a href="https://instagram.com/kainakamura" target="_blank"><img src="../images/heroHome/icon-instagram.png" alt="instagram"></a></li>
+                                <li><a href="https://x.com/kainakamura_climbing" target="_blank"><img src="../images/heroHome/icon-x.png" alt="x"></a></li>
+                                <li><a href="https://www.linkedin.com/in/kainakamura/" target="_blank"><img src="../images/heroHome/icon-linkedin.png" alt="linkedin"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <p>Subscribe for exclusive climbing insights and updates!</p>
+                </div>
+                <form class="newsletter-box" action="index.html" method="GET">
+                    <input type="email"  placeholder="Enter your email" required>
+                    <input type="hidden" name="SUBMIT-SUCCESSFULLY" value="true">
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-main">
+                <div class="footer-nav">
+                    <div class="footer-nav-top">
+                        <div class="footer-nav-logo"></div>
+                        <ul>
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../pages/athletesPage.html">Athletes</a></li>
+                            <li><a href="../pages/competitionsPage.html">Competitions</a></li>
+                            <li><a href="../pages/contactPage.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-center">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-bottom">
+                        <ul>
+                            <li><a href="https://www.facebook.com/groups/escaladagranada/?locale=es_ES" target="_blank"><img src="../images/heroHome/icon-facebook-wh.png" alt="facebook"></a></li>
+                            <li><a href="https://www.instagram.com/climbing_worldwide/?hl=es" target="_blank"><img src="../images/heroHome/icon-instagram-wh.png" alt="instagram"></a></li>
+                            <li><a href="https://twitter.com/climbing?lang=es" target="_blank"><img src="../images/heroHome/icon-x-wh.png" alt="x"></a></li>
+                        </ul>
+                        <p>© Copyright 2024 Rock Climbing. All rights reserved.</p>
+                    </div>
+                </div>
+        </footer>
+    </main>
+</body>
+</html>

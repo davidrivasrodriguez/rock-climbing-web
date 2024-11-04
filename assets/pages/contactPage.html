@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="../css/reset.css">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="../css/main.css">
+        <!-- Contact CSS -->
+        <link rel="stylesheet" href="../css/contactPage.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>Rock Climbing - Contact</title>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.getElementById('menu-icon');
+            const navMenu = document.getElementById('nav-menu');
+    
+            menuIcon.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                menuIcon.classList.toggle('translate');
+            });
+        });
+    </script>
+</head>
+<body>
+    <main>
+        <section class="header-container">
+            <div class="header-main">
+                <header>
+                   <a href="../../index.html" class="logo"></a>
+                    <nav>
+                        <div class="menu-icon" id="menu-icon">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
+                        <ul id="nav-menu">
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../pages/athletesPage.html">Athletes</a></li>
+                            <li><a href="../pages/competitionsPage.html">Competitions</a></li>
+                            <li><a href="../pages/contactPage.html">Contact</a></li>
+                            <li><a href="../../index.html#evolution" class="explore-button">explore more</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div class="header-body">
+                    <h1 class="header-title">Contact</h1>
+                    <div class="header-subtitle">Looking to climb higher?</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-container">
+            <h1>Get In Touch</h1>
+            <div class="contact-box">
+                <aside class="contact-left">
+                    <div class="contact-message">Send a Message</div>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name"></label>
+                                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name"></label>
+                                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone"></label>
+                                <input type="text" id="phone" name="phone" placeholder="Phone"  required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" placeholder="Email"  required>
+                            </div>
+                        </div>
+                        <div class="form-group full-w">
+                            <label for="company"></label>
+                            <input type="text" id="company" name="company" placeholder="Company">
+                        </div>
+                        <div class="form-group full-w">
+                            <label for="message"></label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can we help?" style="resize: none;"  required></textarea>
+                        </div>
+                        <div class="submit-button">
+                            <button type="submit" class="cta-button">Submit</button>
+                        </div>
+                    </form>
+
+                </aside>
+                <aside class="contact-right">
+                    <div class="contact-info-title">Contact Info</div>
+                    <div class="contact-info-number">+34 723 423 140</div>
+                    <div class="contact-info-email">info@rockclimbing.com</div>
+                    <div class="contact-info-logo"></div>
+                    <ul>
+                        <li><a href="https://www.facebook.com/groups/escaladagranada/?locale=es_ES" target="_blank"><img src="../images/heroHome/icon-facebook-wh.png" alt="facebook"></a></li>
+                        <li><a href="https://www.instagram.com/climbing_worldwide/?hl=es" target="_blank"><img src="../images/heroHome/icon-instagram-wh.png" alt="instagram"></a></li>
+                        <li><a href="https://twitter.com/climbing?lang=es" target="_blank"><img src="../images/heroHome/icon-x-wh.png" alt="x"></a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="newsletter-container">
+                <div class="newsletter-text">
+                    <p>Subscribe for exclusive climbing insights and updates!</p>
+                </div>
+                <form class="newsletter-box" action="index.html" method="GET">
+                    <input type="email"  placeholder="Enter your email" required>
+                    <input type="hidden" name="SUBMIT-SUCCESSFULLY" value="true">
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-main">
+                <div class="footer-nav">
+                    <div class="footer-nav-top">
+                        <div class="footer-nav-logo"></div>
+                        <ul>
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../pages/athletesPage.html">Athletes</a></li>
+                            <li><a href="../pages/competitionsPage.html">Competitions</a></li>
+                            <li><a href="../pages/contactPage.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-center">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-bottom">
+                        <ul>
+                            <li><a href="https://www.facebook.com/groups/escaladagranada/?locale=es_ES" target="_blank"><img src="../images/heroHome/icon-facebook-wh.png" alt="facebook"></a></li>
+                            <li><a href="https://www.instagram.com/climbing_worldwide/?hl=es" target="_blank"><img src="../images/heroHome/icon-instagram-wh.png" alt="instagram"></a></li>
+                            <li><a href="https://twitter.com/climbing?lang=es" target="_blank"><img src="../images/heroHome/icon-x-wh.png" alt="x"></a></li>
+                        </ul>
+                        <p>© Copyright 2024 Rock Climbing. All rights reserved.</p>
+                    </div>
+                </div>
+        </footer>
+    </main>
+</body>
+</html>
